@@ -1,0 +1,41 @@
+body{
+	color:#ae9b54;
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+header {
+	background: url("x.jpg");
+	background-size: cover;
+	height: 100%;
+	display: table;
+	text-align: center;
+	width: 100%;
+}
+
+h2{
+	font-family: "Playfair Display", Times, "Times New Roman", serif;
+	font-size:18px;
+	font-weight: 900;
+	font-style: italic;
+	letter-spacing: -1px;
+	font-size: 40px;
+	margin: 0;
+}
+
+h1{
+	font-size: 12px;
+  	letter-spacing: 4px;
+  	font-weight: 100;
+  	margin: 0;
+}
+
+.hola{
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.hola h1{
+	font-family: "Yanone Kaffeesatz",arial, helvetica;
+}

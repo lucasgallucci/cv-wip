@@ -1,0 +1,143 @@
+.anim750{
+  transition: all 750ms ease-in-out;
+}
+
+#Awesome{
+	position: relative;
+	width: 180px;
+	height: 180px;
+	margin: 0 auto;
+	margin-top: 150px;
+}
+
+#Awesome .sticky{
+	transform: rotate(45deg);
+}
+
+#Awesome:hover .sticky{
+	transform: rotate(4deg);
+}
+
+#Awesome .sticky{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:180px;
+	height: 180px;
+}
+
+#Awesome .reveal .circle{
+	box-shadow: 0 1px 0px rgba(0,0,0,.15);
+  
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  line-height: 140px;
+  text-align: center;
+  
+  cursor: pointer;
+}
+
+#Awesome .reveal .circle{
+	background: #fafafa;
+}
+
+#Awesome .circle_wrapper{
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	left: 0px;
+	top: 0px;
+	overflow: hidden;
+}
+
+#Awesome .circle{
+	position: absolute;
+	width: 140px;
+	height:  140px;
+	margin: 20px;
+	background: red;
+	
+	border-radius: 999px;
+}
+
+#Awesome .back{
+	height: 10px;
+	top: 30px;
+}
+
+#Awesome:hover .back{
+	height: 90px;
+	top: 110px;
+}
+
+#Awesome .back .circle{
+	margin-top: -130px;
+	background-color: #64D2E9;
+}
+
+#Awesome:hover .back .circle{
+	margin-top: -50px;
+}
+
+#Awesome .front{
+	height: 150px;
+	bottom: 0;
+	top: auto;
+	
+	-webkit-box-shadow: 0 -140px 20px -140px rgba(0,0,0,.3);
+}
+
+#Awesome:hover .front{
+	height: 70px;
+	
+	-webkit-box-shadow: 0 -60px 10px -60px rgba(0,0,0,.1);
+}
+
+#Awesome .front .circle{
+	margin-top: -10px;
+	background: #A5DBDC;
+}
+
+#Awesome h4{
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  text-align: center;
+	position: absolute;
+	width: 180px;
+	height: 140px;
+  line-height: 140px;
+	
+	transition: opacity 50ms linear 400ms;
+}
+
+#Awesome:hover h4{
+	opacity: 0;
+	
+	transition: opacity 50ms linear 300ms;
+}
+
+#Awesome:hover .front .circle{
+	margin-top: -90px;
+	background-color: #A5DBDC;
+	background-position: 0 100px;
+}
+
+
+h1,h2{
+	font-family: Lato, Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	text-align: center;
+	line-height: 22px;
+	margin: 0;
+}
+
+.logo{ 
+	width: 43px;
+  	margin-top: 40px;
+
+}
+
+.name{
+	margin-bottom: 200px;
+}
