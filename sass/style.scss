@@ -1,4 +1,4 @@
-$dorado:#ae9b54;
+$dorado:#AE9B54;
 $gris-oscuro:#333;
 
 
@@ -7,6 +7,37 @@ body{
 	font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+.menu{
+	position: fixed;
+	right:0;
+	top:20px;
+	z-index:99999;
+	ul{
+		li{
+			  background: $dorado;
+			  padding: 0 10px 0 10px;
+			  float: right;
+			  clear: right;
+			  margin-bottom: 10px;
+			  font-family: "Playfair Display", Times, "Times New Roman", serif;
+			  font-size: 14px;
+			  font-style: italic;
+			  font-weight: 900;
+			  color: white;
+			  transition: 0.5s;
+			  &:hover{
+			  	opacity: 1;
+			  	padding: 0 15px 0 10px;
+			  	transition: 0.5s;
+			  	cursor: pointer;
+			  }
+			  a{
+			  	color: white;
+
+			  }
+		}
+	}
+}
 
 header {
 	display: table;
@@ -41,21 +72,24 @@ header {
 					display: inline-block;
 					height: 40px;
 					width: 40px;
-					background: #ae9b54;
+					background: $dorado;
 					border-radius: 50%;
 					transition: 0.5s;
+					color: white;
 					&:hover{
 						background: white;
 						transition: 0.5s;
 						transform: scale(1.1,1.1);
+						color: $dorado;
+
 					}
 
 					span{
-						color: #333;
 					  	font-size: 23px;
 					  	line-height: 0px;
 					  	position: relative;
 					  	top: 10px;
+					  	
 					}
 				}
 			}
@@ -109,14 +143,16 @@ background-size: cover;
 	background: $dorado;
 	color: $gris-oscuro;
 	padding:50px 0;
+	overflow:hidden;
 	h2{
-		  margin-bottom: 50px;
-  position: absolute;
-  color: white;
-  font-size: 380px;
-  margin-top: -100px;
-  opacity: 0.1;
-  letter-spacing: -28px;
+		margin-bottom: 50px;
+		position: absolute;
+		color: white;
+		font-size: 380px;
+		margin-top: -100px;
+		opacity: 0.1;
+		letter-spacing: -28px;
+		
 		&:before{
 			content: "*";
 			margin-right: 10px;
@@ -139,12 +175,20 @@ background-size: cover;
 	 	font-weight: 900;
   		font-style: italic;
   		font-size: 22px;
+  		color: white;
 	}
 
 	ul{
 		list-style: none;
 		padding: 0;
 		font-weight: 300;
+		li{
+			background-color: white;
+  			display: inline-block;
+  			padding: 0 5px;
+    		margin: 5px;
+  			border-radius: 4px;
+		}
 	}
 	span{
 		margin-right:20px;
@@ -253,6 +297,7 @@ section{
 	}
 
 	.estudio{
+		margin-bottom: 30px;
 		.fecha{
 			display: block;
 			font-size: 12px;
@@ -277,6 +322,18 @@ section{
 	}
 
 }
+
+
+.portfolio{
+	min-height:700px;
+	background: $dorado;
+}
+
+.contacto{
+	min-height:700px;
+	background: $gris-oscuro;
+}
+
 
 
 .next{
