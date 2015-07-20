@@ -7,31 +7,31 @@ body {
   right: 0;
   top: 20px;
   z-index: 99999; }
-  .menu ul li {
-    background: #AE9B54;
-    padding: 0 10px 0 10px;
-    float: right;
-    clear: right;
-    margin-bottom: 10px;
-    font-family: "Playfair Display", Times, "Times New Roman", serif;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: 900;
-    color: white;
-    transition: 0.5s; }
-    .menu ul li:hover {
-      opacity: 1;
-      padding: 0 15px 0 10px;
-      transition: 0.5s;
-      cursor: pointer; }
-    .menu ul li a {
-      color: white; }
+  .menu ul {
+    list-style: none; }
+    .menu ul li {
+      background: #ae9b54;
+      padding: 0 10px 0 10px;
+      float: right;
+      clear: right;
+      width: 90px;
+      margin-bottom: 10px;
+      font-family: Roboto, arial, helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      color: white;
+      transition: 0.5s; }
+      .menu ul li:hover {
+        width: 100px;
+        cursor: pointer; }
+      .menu ul li a {
+        color: white; }
 
 header {
   display: table;
   width: 100%;
   height: 95%;
-  color: #AE9B54; }
+  color: #ae9b54; }
   header .hola {
     position: relative;
     display: table-cell;
@@ -43,9 +43,9 @@ header {
       letter-spacing: 2px;
       font-weight: 300;
       margin: 0;
-      background-color: #AE9B54;
+      background-color: #ae9b54;
       display: inline-block;
-      color: black;
+      color: white;
       font-family: Roboto, Arial, Helvetica, sans-serif;
       padding: 2px 2px; }
     header .hola ul {
@@ -58,7 +58,7 @@ header {
           display: inline-block;
           height: 40px;
           width: 40px;
-          background: #AE9B54;
+          background: #ae9b54;
           border-radius: 50%;
           transition: 0.5s;
           color: white; }
@@ -66,19 +66,22 @@ header {
             background: white;
             transition: 0.5s;
             transform: scale(1.1, 1.1);
-            color: #AE9B54; }
+            color: #ae9b54; }
           header .hola ul li a span {
             font-size: 23px;
             line-height: 0px;
             position: relative;
             top: 10px; }
+            header .hola ul li a span.behance img {
+              height: 23px;
+              position: relative;
+              top: -2px; }
     header .hola .next {
-      position: absolute;
-      bottom: 40px; }
+      position: relative;
+      top: 100px; }
 
 h2 {
   font-family: "Playfair Display", Times, "Times New Roman", serif;
-  font-size: 18px;
   font-weight: 900;
   font-style: italic;
   letter-spacing: -1px;
@@ -91,7 +94,7 @@ h1 {
   font-weight: 100;
   margin: 0; }
 
-video#bgvid {
+video#header {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -101,12 +104,13 @@ video#bgvid {
   height: auto;
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url(polina.jpg) no-repeat;
+  background: black url(../video/video.jpg) no-repeat;
   background-size: cover; }
 
 .skills {
-  background: #AE9B54;
+  background: #ae9b54;
   color: #333;
   padding: 50px 0;
   overflow: hidden; }
@@ -126,6 +130,17 @@ video#bgvid {
     			border-top: 1px solid #666;
     			transform: rotate(30deg);
     		}*/ }
+    @media screen and (max-width: 1000px) {
+      .skills h2 {
+        font-size: 300px;
+        margin-bottom: 20px; } }
+    @media screen and (max-width: 750px) {
+      .skills h2 {
+        font-size: 40px;
+        letter-spacing: -1px;
+        margin: 0;
+        position: relative;
+        opacity: 1; } }
     .skills h2:before {
       content: "*";
       margin-right: 10px;
@@ -153,44 +168,43 @@ video#bgvid {
 section h2 {
   margin-bottom: 20px; }
 
-.works {
+.trabajos {
   padding: 50px 0;
   background: white; }
-  .works h2 {
+  .trabajos h2 {
     color: #333; }
-    .works h2:before {
-      content: "*";
+    .trabajos h2:before {
       margin-right: 10px;
       position: relative;
       top: 10px; }
-  .works .work {
+  .trabajos .work {
     margin-bottom: 30px;
-    padding: 20px;
+    padding: 20px 30px;
     box-sizing: border-box;
-    border-bottom: 2px solid #AE9B54;
-    min-height: 210px; }
-    .works .work .fecha {
+    border-bottom: 2px solid #ae9b54;
+    min-height: 250px; }
+    .trabajos .work .fecha {
       display: block;
       font-size: 12px; }
-    .works .work h3 {
+    .trabajos .work h3 {
       font-family: "Playfair Display", Times, "Times New Roman", serif;
       font-size: 22px;
       font-weight: 900;
       font-style: italic;
-      color: #AE9B54;
+      color: #ae9b54;
       margin: 5px 0 00; }
-    .works .work h5 {
+    .trabajos .work h5 {
       font-size: 14px;
       font-weight: 300;
       margin: 5px 0; }
-    .works .work ul {
+    .trabajos .work ul {
       padding: 0;
       color: #666; }
-      .works .work ul li {
+      .trabajos .work ul li {
         font-size: 12px;
         list-style: none;
         font-weight: 300; }
-    .works .work a {
+    .trabajos .work a {
       font-size: 11px;
       color: #666;
       letter-spacing: 1px;
@@ -202,24 +216,23 @@ section h2 {
       				width: 15px;
       				height: 15px;
       				border-radius:50%;
-      				background: $dorado;
+      				background: $main-color;
       				color: white;
       			}
       */ }
-      .works .work a:hover {
-        background-color: #AE9B54;
+      .trabajos .work a:hover {
+        background-color: #ae9b54;
         color: white;
         text-decoration: none;
         transition: 0.5s; }
 
 .estudios {
-  background: #333;
   padding: 50px 0;
-  color: white; }
+  color: #bcbccd;
+  background-color: black; }
   .estudios h2 {
-    color: white; }
+    color: #333; }
     .estudios h2:before {
-      content: "*";
       margin-right: 10px;
       position: relative;
       top: 10px; }
@@ -233,26 +246,57 @@ section h2 {
       font-size: 22px;
       font-weight: 900;
       font-style: italic;
-      color: #AE9B54;
+      color: #ae9b54;
       margin: 5px 0 00; }
     .estudios .estudio h5 {
       font-size: 14px;
       font-weight: 300;
       margin: 5px 0; }
 
-.portfolio {
-  min-height: 700px;
-  background: #AE9B54; }
-
 .contacto {
-  min-height: 700px;
-  background: #333; }
+  padding: 50px 0;
+  background: white; }
+  .contacto ul {
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    display: inline-block; }
+    .contacto ul li {
+      display: inline-block;
+      margin-right: 30px; }
+      @media screen and (max-width: 550px) {
+        .contacto ul li {
+          float: left;
+          display: block;
+          margin-bottom: 20px; } }
+      .contacto ul li i {
+        color: white;
+        font-size: 30px;
+        background: #ae9b54;
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 5px; }
+      .contacto ul li span {
+        position: relative;
+        color: #333;
+        top: -6px;
+        font-size: 16px;
+        font-weight: 300;
+        margin-left: 5px; }
+        .contacto ul li span a {
+          color: #333;
+          text-decoration: none; }
+      .contacto ul li:last-child {
+        margin: 0; }
 
 .next {
   width: 40px;
   height: 40px;
   display: inline-block;
-  border: 3px solid #AE9B54;
+  border: 3px solid #ae9b54;
   background: none;
   border-radius: 50%;
   transition: 0.5s; }
@@ -260,19 +304,97 @@ section h2 {
     content: "";
     width: 52%;
     height: 40%;
-    border-top: 3px solid #AE9B54;
-    border-left: 3px solid #AE9B54;
+    border-top: 3px solid #ae9b54;
+    border-left: 3px solid #ae9b54;
     transform: rotate(225deg);
     display: inline-block;
     top: -1px;
     position: relative;
     transition: 0.5s; }
   .next:hover {
-    background: #AE9B54;
+    background: #ae9b54;
     transition: 0.5s; }
     .next:hover:after {
       border-top: 3px solid black;
       border-left: 3px solid black;
       transition: 0.5s; }
+
+.portfolio {
+  background: #333;
+  padding: 50px 0; }
+  .portfolio article {
+    margin-bottom: 30px; }
+    .portfolio article:hover img {
+      -webkit-filter: none;
+      -webkit-filter: none;
+      filter: none;
+      filter: none;
+      filter: none;
+      transition: 0.3s; }
+  .portfolio h2 {
+    color: #ae9b54; }
+  .portfolio img {
+    		/*	-webkit-filter: grayscale(1);
+      			-webkit-filter: grayscale(100%);
+    			filter: grayscale(100%);
+    			filter: url(#greyscale);
+    			filter: gray;
+    			transition:0.3s;
+    */ }
+  .portfolio .info {
+    background-color: #ae9b54;
+    padding: 10px; }
+    .portfolio .info h3 {
+      font-family: "Playfair Display", Times, "Times New Roman", serif;
+      font-size: 22px;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 25px;
+      color: white;
+      letter-spacing: 0px;
+      margin: 10px 0 0 0; }
+    .portfolio .info a {
+      font-family: roboto;
+      color: white;
+      font-weight: 700;
+      display: inline-block; }
+    .portfolio .info ul {
+      list-style: none;
+      padding: 0;
+      font-weight: 300;
+      display: inline-block; }
+      .portfolio .info ul li {
+        background-color: white;
+        display: inline-block;
+        padding: 0 5px;
+        margin: 5px;
+        border-radius: 4px; }
+    .portfolio .info p {
+      font-weight: 300;
+      color: white;
+      margin-top: 10px; }
+    .portfolio .info h6 {
+      display: inline-block;
+      color: white;
+      font-weight: 300; }
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden; }
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.img-responsive {
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
